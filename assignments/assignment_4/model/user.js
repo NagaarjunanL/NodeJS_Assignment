@@ -10,6 +10,7 @@ const userSchema = new Schema({
     selected: Number
 }, {timestamps: true});
 
+
 const User = mongoose.model('User', userSchema);
 
 module.exports = User;

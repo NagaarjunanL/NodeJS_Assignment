@@ -39,6 +39,7 @@ app.post("/user/add", async (req, res) =>{
     res.redirect("/");
 })
 
+
 app.put("/user/:city", async (req, res) =>{
     console.log(req.params.city);
     await user.updateOne({city: req.params.city}, {selected: true});
