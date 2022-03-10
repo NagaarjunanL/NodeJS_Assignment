@@ -30,6 +30,7 @@ app.use("/api/v1/posts", (req, res, next) =>{
     });
 });
 
+
 // app.use("/api/v1/users", userRoutes);
 app.use("/api/v1", loginRoutes);
 app.use("/api/v1", postRoutes);

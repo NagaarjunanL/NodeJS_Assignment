@@ -13,6 +13,7 @@ router.get("/", async (req, res) => {
         users
     });
 })
+
 // POST route-- create data
 router.post("/",  body('email').isEmail(), body('name').isAlpha(), async (req, res) => {
     try{

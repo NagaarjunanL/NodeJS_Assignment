@@ -7,6 +7,7 @@ var jwt = require('jsonwebtoken');
 const { body, param, validationResult } = require('express-validator');
 const SECRET = "RESTAPI";
 
+
 router.get("/posts", async (req, res) =>{
     const posts = await Post.find();
     res.json({

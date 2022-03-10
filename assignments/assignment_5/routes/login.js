@@ -44,6 +44,7 @@ router.post("/register", body("email"), body("name"), async (req, res) => {
     }
 })
 
+
 router.post("/login", body("email"), body("password"), async (req, res) => {
     try {
         const errors = validationResult(req);
